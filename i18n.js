@@ -1,0 +1,122 @@
+/* Traducción al inglés. El español está escrito directamente en index.html.
+   Para cambiar un texto en inglés, edita aquí la frase que corresponde a su clave. */
+window.I18N_EN = {
+  "nav.faciales": "Facials",
+  "nav.corporales": "Body",
+  "nav.laser": "Laser",
+  "nav.hombres": "Men",
+  "nav.programas": "Programmes",
+  "nav.sobre": "About",
+  "nav.reservar": "Book",
+
+  "hero.h1": "Natural beauty, mindful care and wellbeing.",
+  "hero.apoio": "Advanced non-surgical skincare in my Fuengirola studio and at home, from Málaga to Estepona.",
+  "hero.m2": "I'm not here to change your face. I'm here to keep your skin healthy and looking like you.",
+  "hero.dica": "scroll",
+  "hero.m3": "First I listen to your skin. Then we choose the treatment together.",
+
+  "cta.reservar": "Book a treatment",
+  "cta.ver": "See treatments",
+  "cta.reservarEstudio": "Book at the studio",
+  "cta.domicilio": "Request an at-home treatment",
+  "cta.laser": "Book laser hair removal",
+  "cta.hombres": "Message on WhatsApp",
+  "cta.bonos": "Ask about programmes",
+  "cta.consultar": "Message on WhatsApp",
+
+  "filo.h2": "Your skin as it is, only better cared for.",
+  "filo.p1": "I practise advanced non-surgical aesthetics from an honest place: respecting every skin type, working with its timing and teaching you habits that work at home.",
+  "filo.p2": "Every session starts with a conversation and a skin assessment. No one-size-fits-all routines: just what your skin needs today, clearly explained.",
+  "filo.nota": "Treatments for women and men.",
+
+  "mod.h2": "Two ways to look after yourself",
+  "mod.estudio": "A private studio where I carry out every facial, body, device-based and laser treatment. One-to-one care, no waiting, no rush.",
+  "mod.e1": "Full treatment menu",
+  "mod.e2": "Devices and diode laser",
+  "mod.e3": "In-studio skin assessment",
+  "mod.h3dom": "At home",
+  "mod.domicilio": "I bring selected treatments to your home, hotel or villa on the Costa del Sol.",
+  "mod.sello": "Bookings from €100 have no travel supplement.",
+
+  "fac.h2": "Advanced facial aesthetics",
+  "fac.p": "Browse by treatment or by what your skin needs.",
+  "nec.todos": "All",
+  "nec.hidratacion": "Hydration",
+  "nec.luminosidad": "Radiance",
+  "nec.textura": "Texture",
+  "nec.firmeza": "Firmness",
+  "nec.imperfecciones": "Blemishes",
+  "nec.prevencion": "Prevention",
+
+  "cor.h2": "Body treatments",
+  "cor.p": "Slimming, contouring and wellbeing. The best results come with consistency: I design multi-session programmes around your goal and we track progress together.",
+  "cor.link": "See body programmes",
+
+  "las.h2": "Diode laser hair removal",
+  "las.p": "For women and men, face and body. Single sessions per area or multi-session packs.",
+  "las.facial": "Face",
+  "las.corporal": "Body",
+  "las.rec": "Before your session",
+  "las.r1": "Shave the area 24 hours before. Between sessions, no waxing or tweezing.",
+  "las.r2": "Avoid direct sun and self-tanner in the weeks before.",
+  "las.r3": "Sessions are spaced according to the area, usually 4 to 8 weeks apart.",
+  "las.r4": "Let me know if you take photosensitising medication or are pregnant.",
+
+  "men.p": "Men's skin is thicker, produces more oil and takes a beating from daily shaving. Treatments designed for it, in a discreet space with times that suit you.",
+
+  "prog.p": "Bespoke beauty and wellness programmes. 4, 6 and 8-session packs to see real results and keep them.",
+  "prog.faciales": "Facial",
+  "prog.corporales": "Body",
+  "prog.laser": "Laser",
+  "prog.nota": "Every programme starts with an assessment to decide the number of sessions and how often.",
+
+  "rit.p": "What you do at home every day matters as much as what we do in the studio. The right routine is what keeps the results.",
+  "rit.1t": "Cleanse",
+  "rit.1": "Morning and night, with a cleanser suited to your skin type.",
+  "rit.2t": "Treat",
+  "rit.2": "A serum with the active your skin needs: hydration, pigmentation, pores or firmness.",
+  "rit.3t": "Moisturise",
+  "rit.3": "A cream that respects your skin barrier.",
+  "rit.4t": "Sun protection",
+  "rit.4": "Every day of the year, winter included. On the Costa del Sol, no exceptions.",
+  "rit.marcas": "I work with Mesoestetic and Naturnua professional skincare and recommend your home routine after each treatment.",
+  "rit.tienda": "Coming soon: an online shop with cleansers, serums, sunscreens and packs for each skin type.",
+
+  "sobre.cargo": "Beauty therapist · Cosmetologist · Dermocosmiatrist",
+  "sobre.p1": "I trained in facial and body aesthetics, devices and wellness, and went on to specialise in lymphatic drainage, Kobido massage and pre- and post-operative care. I keep training every year, because skincare moves fast.",
+  "sobre.p2": "I believe in listening before treating: getting to know your skin, your routine and what you expect, and recommending only what makes sense for you.",
+  "sobre.p3": "YB Skin is my own project as an independent woman in business. I build it every day with the same passion I started with.",
+
+  "res.h2": "Real results",
+  "res.p": "Photos of my own work, shared with each client's consent and unretouched. Every skin responds at its own pace: I don't promise guaranteed results, I promise honest treatment.",
+  "res.c1": "Cosmelan® method · pigmentation and uneven tone",
+  "res.c2": "Anti-ageing protocol · expression lines. Before on the left, after on the right.",
+
+  "res2.h2": "Book your appointment",
+  "res2.p": "WhatsApp is the quickest way. If you prefer, leave your details and I'll get back to you.",
+  "f.nome": "Name",
+  "f.modo": "Where",
+  "f.estudio": "Studio in Fuengirola",
+  "f.domicilio": "At home",
+  "f.msg": "Which treatment are you interested in?",
+  "f.enviar": "Send",
+
+  "rod.local": "Studio in Fuengirola · At home from Málaga to Estepona",
+
+  /* Textos generados por app.js */
+  "js.reservar": "Book",
+  "js.sesiones": "sessions",
+  "js.verificar": "Please check the highlighted fields.",
+  "js.enviando": "Sending…",
+  "js.ok": "Thank you. I'll get back to you very soon.",
+  "js.falha": "It couldn't be sent right now. Message me on WhatsApp.",
+};
+
+window.I18N_ES_JS = {
+  "js.reservar": "Reservar",
+  "js.sesiones": "sesiones",
+  "js.verificar": "Revisa los campos marcados.",
+  "js.enviando": "Enviando…",
+  "js.ok": "Gracias. Te respondo muy pronto.",
+  "js.falha": "No se pudo enviar ahora. Escríbeme por WhatsApp.",
+};
