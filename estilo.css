@@ -99,9 +99,9 @@ button { font: inherit; color: inherit; }
 }
 @media (min-width: 861px) {
   .cine-video {
-    left: auto; right: 0; width: 56vw;
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 30%), linear-gradient(to bottom, #000 75%, transparent);
-            mask-image: linear-gradient(to right, transparent, #000 30%), linear-gradient(to bottom, #000 75%, transparent);
+    left: auto; right: 4vw; width: clamp(420px, 42vw, 70vh);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 28%, #000 82%, transparent), linear-gradient(to bottom, #000 75%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 28%, #000 82%, transparent), linear-gradient(to bottom, #000 75%, transparent);
     -webkit-mask-composite: source-in; mask-composite: intersect;
   }
 }
