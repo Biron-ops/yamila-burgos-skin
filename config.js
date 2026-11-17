@@ -9,7 +9,7 @@ window.SITE = {
     mensajes: {
       reservar:    { es: "Hola Yamila, quiero reservar un tratamiento.", en: "Hi Yamila, I'd like to book a treatment." },
       consultar:   { es: "Hola Yamila, vengo de tu web y quiero hacer una consulta.", en: "Hi Yamila, I found your website and have a question." },
-      domicilio:   { es: "Hola Yamila, quiero solicitar un tratamiento a domicilio. Mi zona es: ", en: "Hi Yamila, I'd like to request an at-home treatment. My area is: " },
+      domicilio:   { es: "Hola Yamila, quiero reservar una experiencia a domicilio (casa / hotel / villa). Mi zona es: ", en: "Hi Yamila, I'd like to book an at-home experience (home / hotel / villa). My area is: " },
       bonos:       { es: "Hola Yamila, quiero información sobre los bonos YB Skin Programs.", en: "Hi Yamila, I'd like information about the YB Skin Programs." },
       hombres:     { es: "Hola Yamila, quiero información sobre los tratamientos para hombre.", en: "Hi Yamila, I'd like information about men's treatments." },
       laser:       { es: "Hola Yamila, quiero información sobre depilación láser.", en: "Hi Yamila, I'd like information about laser hair removal." },

@@ -43,31 +43,23 @@
     aplicarIdioma();
   });
 
-  /* ── Catálogo (datos.js) ───────────────────────────────────────────────── */
-  let filtro = "todos", aba = "faciales";
-
-  const cartaoTratamento = (tr) => {
+  /* ── Carta y programas (datos.js) ──────────────────────────────────────── */
+  const itemCarta = (tr, i) => {
     const x = tr[lang] || tr.es;
     const meta = [tr.duracion, tr.precio].filter(Boolean).map(esc).join(" · ");
-    const nec = (tr.necesidades || []).join(" ");
-    const foto = tr.img ? `<img class="tr-foto" src="${esc(tr.img)}" alt="${esc(x.n)}" loading="lazy" width="360" height="360">` : "";
-    return `<details class="tratamento" data-nec="${nec}">
-      <summary><span class="tr-nome">${esc(x.n)}</span>${meta ? `<span class="tr-meta">${meta}</span>` : ""}</summary>
-      <div class="tr-corpo${foto ? " tr-corpo--foto" : ""}">${foto}<div><p>${esc(x.d)}</p>
-      <a class="link-seta" target="_blank" rel="noopener" href="${waLink("tratamiento", x.n)}">${t("js.reservar")}</a></div></div>
-    </details>`;
+    return `<li class="carta-item">
+      <span class="carta-num">${String(i + 1).padStart(2, "0")}</span>
+      <div class="carta-texto"><h3 class="carta-nome">${esc(x.n)}</h3><p>${esc(x.d)}</p></div>
+      <div class="carta-acao">${meta ? `<span class="tr-meta">${meta}</span>` : ""}
+      <a class="link-seta" target="_blank" rel="noopener" href="${waLink("tratamiento", x.n)}">${t("js.reservar")}</a></div>
+    </li>`;
   };
 
   function renderizar() {
     const lf = $("#lista-faciales");
-    if (lf) lf.innerHTML = (D.faciales || []).map(cartaoTratamento).join("");
+    if (lf) lf.innerHTML = (D.faciales || []).map(itemCarta).join("");
     const lc = $("#lista-corporales");
-    if (lc) lc.innerHTML = (D.corporales || []).map(cartaoTratamento).join("");
-    aplicarFiltro();
-
-    const zona = (z) => `<li><span>${esc(z[lang] || z.es)}</span>${z.precio ? `<em>${esc(z.precio)}</em>` : ""}</li>`;
-    if ($("#laser-facial")) $("#laser-facial").innerHTML = (D.laser?.facial || []).map(zona).join("");
-    if ($("#laser-corporal")) $("#laser-corporal").innerHTML = (D.laser?.corporal || []).map(zona).join("");
+    if (lc) lc.innerHTML = (D.corporales || []).map(itemCarta).join("");
     if ($("#lista-hombres")) $("#lista-hombres").innerHTML = (D.hombres || []).map((h) => `<li>${esc(h[lang] || h.es)}</li>`).join("");
 
     const promo = $("#promo");
@@ -76,36 +68,15 @@
       promo.hidden = !ativa;
       if (ativa) promo.textContent = D.promo[lang];
     }
-    renderBonos();
-  }
-
-  function renderBonos() {
     const alvo = $("#bonos");
-    if (!alvo) return;
-    const lista = D.bonos?.[aba] || [];
-    alvo.innerHTML = lista.map((b) => {
-      const nome = b[lang] || b.es;
-      const ops = (b.sesiones || []).map((n) =>
-        `<a target="_blank" rel="noopener" href="${waLink("bonos", ` (${nome} · ${n} ${t("js.sesiones")})`)}">${n}</a>`).join("");
-      return `<li><span class="bono-nome">${esc(nome)}</span><span class="bono-ops">${ops}<em>${t("js.sesiones")}</em></span></li>`;
+    if (alvo) alvo.innerHTML = (D.programas || []).map((p) => {
+      const x = p[lang] || p.es;
+      const ops = (p.sesiones || []).map((n) =>
+        `<a target="_blank" rel="noopener" href="${waLink("bonos", ` (${x.n} · ${n} ${t("js.sesiones")})`)}">${n}</a>`).join("");
+      return `<li class="programa"><h3>${esc(x.n)}</h3><p>${esc(x.d)}</p>
+        <span class="bono-ops">${ops}<em>${t("js.sesiones")}</em></span></li>`;
     }).join("");
   }
-
-  function aplicarFiltro() {
-    $$("#lista-faciales .tratamento").forEach((d) => {
-      d.hidden = filtro !== "todos" && !d.dataset.nec.split(" ").includes(filtro);
-    });
-  }
-  $$(".filtro").forEach((b) => b.addEventListener("click", () => {
-    filtro = b.dataset.filtro;
-    $$(".filtro").forEach((x) => x.classList.toggle("ativo", x === b));
-    aplicarFiltro();
-  }));
-  $$(".aba").forEach((b) => b.addEventListener("click", () => {
-    aba = b.dataset.aba;
-    $$(".aba").forEach((x) => { x.classList.toggle("ativo", x === b); x.setAttribute("aria-selected", x === b); });
-    renderBonos();
-  }));
 
   aplicarIdioma();
 

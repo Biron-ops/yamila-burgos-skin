@@ -365,6 +365,54 @@ button { font: inherit; color: inherit; }
   .bono-ops em { display: none; }
 }
 
+
+/* ── Bloque 2026-11-17: carta compacta, experiencia a domicilio, programas ── */
+.filo-cierre { font-family: var(--fonte-titulo); font-style: italic; font-size: clamp(22px, 1.8vw, 28px); line-height: 1.3; color: var(--acento); margin-top: .6em; }
+
+.modalidades { grid-template-columns: 1.35fr 1fr; align-items: stretch; }
+.modalidade--private h3 { font-size: clamp(34px, 3.4vw, 54px); }
+.private-lema { font-family: var(--fonte-titulo); font-size: clamp(21px, 1.7vw, 26px); line-height: 1.35; color: var(--fundo) !important; }
+.private-lugares { list-style: none; margin: 4px 0 22px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; width: 100%; }
+.private-lugares li { border-top: 1px solid #d6b98a; padding-top: 12px; display: grid; gap: 4px; }
+.private-lugares strong { font-family: var(--fonte-titulo); font-weight: 400; font-size: 24px; color: #d6b98a; }
+.private-lugares span { font-size: 14px; line-height: 1.5; color: rgb(245 240 234 / .72); }
+
+.secao--carta { align-content: start; }
+.carta-topo { margin-bottom: 30px; width: 100%; max-width: var(--largura); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: center; }
+.carta-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.carta-fotos img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: var(--raio); box-shadow: 0 24px 50px -28px rgb(28 24 21 / .45); }
+.carta-fotos img:last-child { transform: translateY(28px); }
+.carta { width: 100%; max-width: var(--largura); }
+.carta-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(28px, 4vw, 64px); }
+.carta-item { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--linha); }
+.carta-num { font-family: var(--fonte-titulo); font-size: 20px; color: var(--acento); }
+.carta-nome { font-size: clamp(23px, 1.9vw, 30px); font-weight: 400; margin: 0 0 4px; }
+.carta-texto p { margin: 0; font-size: .95em; }
+.carta-acao { display: grid; justify-items: end; gap: 6px; }
+.carta-acao .link-seta { font-size: 11.5px; }
+.carta-pie { margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+.carta-lista--corpo { grid-template-columns: 1fr; }
+
+.programas { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.programa { border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px 24px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; align-items: center; background: rgb(255 255 255 / .35); }
+.programa h3 { margin: 0; font-size: clamp(25px, 2vw, 32px); font-weight: 400; grid-column: 1; }
+.programa p { margin: 0; grid-column: 1; }
+.programa .bono-ops { grid-column: 2; grid-row: 1 / span 2; }
+.men-lema { font-family: var(--fonte-titulo); font-size: clamp(23px, 2vw, 30px); line-height: 1.3; color: var(--texto); }
+
+@media (max-width: 860px) {
+  .carta-topo, .carta-lista { grid-template-columns: 1fr; }
+  .carta-fotos img:last-child { transform: translateY(18px); }
+  .carta-fotos { margin-bottom: 18px; }
+}
+@media (max-width: 640px) {
+  .private-lugares { grid-template-columns: 1fr; }
+  .carta-item { grid-template-columns: 34px minmax(0, 1fr); }
+  .carta-acao { grid-column: 2; justify-items: start; }
+  .programa { grid-template-columns: 1fr; }
+  .programa .bono-ops { grid-column: 1; grid-row: auto; margin-top: 10px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .revelar, .momento:first-of-type { opacity: 1; transform: none; filter: none; }
