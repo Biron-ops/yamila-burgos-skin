@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/video/apertura-poster.webp?v=2">
+  <link rel="preload" as="image" href="assets/video/apertura-poster.webp?v=3">
   <link rel="stylesheet" href="estilo.css">
   <script type="application/ld+json">
   {
@@ -52,41 +52,30 @@
 
 <main>
 
-  <!-- APERTURA: video del tratamiento facial (Peeling) en autoplay -->
-  <section id="inicio" class="cine">
-    <div class="cine-palco">
-      <video class="cine-video" src="assets/video/apertura.mp4?v=2" poster="assets/video/apertura-poster.webp?v=2" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
-      <div class="cine-vinheta"></div>
-
-      <div class="momento" data-de="0" data-ate="0.3">
-        <div class="painel painel--vidro">
-          <span class="sobretitulo">Advanced Skin &amp; Wellness · Fuengirola</span>
-          <h1 class="titulo-abertura" data-i18n="hero.h1">Belleza natural, cuidado consciente y bienestar.</h1>
-          <p class="apoio" data-i18n="hero.apoio">Estética avanzada no quirúrgica en mi estudio de Fuengirola y a domicilio, de Málaga a Estepona.</p>
+  <!-- APERTURA: texto centrado + video del tratamiento facial enmarcado -->
+  <section id="inicio" class="cine hero">
+    <div class="hero-grade">
+      <div class="hero-texto">
+        <span class="sobretitulo">Advanced Skin &amp; Wellness</span>
+        <span class="hero-linea" aria-hidden="true"></span>
+        <h1 class="titulo-abertura" data-i18n="hero.h1">Belleza natural, cuidado consciente y bienestar.</h1>
+        <p class="apoio" data-i18n="hero.apoio">Estética avanzada no quirúrgica en mi estudio de Fuengirola y a domicilio, de Málaga a Estepona.</p>
+        <p class="hero-cita" data-i18n="hero.m3">Primero escucho a tu piel. Después elegimos juntas el tratamiento.</p>
+        <div class="botoes">
+          <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
+          <a href="#faciales" class="botao botao--linha" data-i18n="cta.ver">Ver tratamientos</a>
         </div>
+        <span class="hero-firma" data-i18n="hero.firma">Yamila Burgos · Esteticista · Cosmetóloga · Dermocosmiatra</span>
       </div>
-      <div class="momento" data-de="0.38" data-ate="0.66">
-        <div class="painel painel--vidro">
-          <p class="destaque" data-i18n="hero.m2">No busco cambiar tu cara. Busco que tu piel esté sana y se vea como tú.</p>
-        </div>
-      </div>
-      <div class="momento" data-de="0.74" data-ate="1">
-        <div class="painel painel--vidro">
-          <p class="destaque" data-i18n="hero.m3">Primero escucho a tu piel. Después elegimos juntas el tratamiento.</p>
-          <div class="botoes">
-            <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
-            <a href="#faciales" class="botao botao--linha" data-i18n="cta.ver">Ver tratamientos</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="cine-dica" aria-hidden="true"><span></span><b data-i18n="hero.dica">desliza</b></div>
+      <figure class="hero-video">
+        <video class="cine-video" src="assets/video/apertura.mp4?v=3" poster="assets/video/apertura-poster.webp?v=3" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+      </figure>
     </div>
   </section>
 
   <!-- 01 FILOSOFÍA -->
   <section id="filosofia" class="secao">
-    <img class="arte arte--direita" src="assets/img/filosofia.webp" alt="Yamila Burgos realizando una limpieza facial en su estudio" loading="lazy">
+    <img class="arte arte--direita" src="assets/img/filosofia.webp?v=2" alt="Yamila Burgos realizando una limpieza facial en su estudio" loading="lazy">
     <div class="secao-grade">
       <div class="painel revelar">
         <span class="rotulo">01</span>
@@ -207,7 +196,7 @@
 
   <!-- 08 SKIN RITUALS -->
   <section id="rituales" class="secao">
-    <img class="arte arte--direita arte--produto" src="assets/img/rituals.webp" alt="Crema Cosmelan 2 de Mesoestetic" loading="lazy">
+    <img class="arte arte--direita arte--produto" src="assets/img/rituals.webp?v=2" alt="Crema Cosmelan 2 de Mesoestetic" loading="lazy">
     <div class="secao-grade">
       <div class="painel revelar">
         <span class="rotulo">07</span>
@@ -226,7 +215,7 @@
 
   <!-- 09 SOBRE MÍ -->
   <section id="sobre-mi" class="secao">
-    <img class="arte arte--esquerda arte--retrato" src="assets/img/sobre.webp" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy">
+    <img class="arte arte--esquerda arte--retrato" src="assets/img/sobre.webp?v=2" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy">
     <div class="secao-grade secao-grade--direita">
       <div class="painel revelar">
         <span class="rotulo">08</span>

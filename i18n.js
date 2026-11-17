@@ -11,7 +11,7 @@ window.I18N_EN = {
   "hero.h1": "Natural beauty, mindful care and wellbeing.",
   "hero.apoio": "Advanced non-surgical skincare in my Fuengirola studio and at home, from Málaga to Estepona.",
   "hero.m2": "I'm not here to change your face. I'm here to keep your skin healthy and looking like you.",
-  "hero.dica": "scroll",
+  "hero.firma": "Yamila Burgos · Beauty therapist · Cosmetologist · Dermocosmiatrist",
   "hero.m3": "First I listen to your skin. Then we choose the treatment together.",
 
   "cta.reservar": "Book a treatment",

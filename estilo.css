@@ -419,3 +419,87 @@ button { font: inherit; color: inherit; }
   .cine { height: 100svh; }
   .momento:not(:first-of-type), .cine-dica { display: none; }
 }
+
+
+/* ══ Estilo institucional (2026-11-17) ══════════════════════════════════
+   Portada con texto centrado y video enmarcado; fotos nítidas en marco,
+   sin fundidos ni grano. */
+body::after { content: none; }
+
+/* Portada */
+.hero { height: auto; min-height: 100vh; min-height: 100svh; display: grid; align-items: center;
+  padding: 120px var(--gutter) 70px; background: linear-gradient(180deg, var(--fundo) 0%, var(--fundo-2) 100%); }
+.hero-grade { width: 100%; max-width: var(--largura); margin: 0 auto; display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(40px, 6vw, 100px); align-items: center; }
+.hero-texto { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 620px; margin-inline: auto; }
+.hero-texto .sobretitulo { margin-bottom: 14px; }
+.hero-linea { width: 56px; height: 1px; background: var(--acento); margin-bottom: 28px; }
+.hero .titulo-abertura { font-size: clamp(42px, 4.6vw, 74px); line-height: 1.04; margin-bottom: 22px; }
+.hero .apoio { max-width: 46ch; margin: 0 auto 18px; }
+.hero-cita { font-family: var(--fonte-titulo); font-style: italic; font-size: clamp(20px, 1.6vw, 25px); line-height: 1.35; color: var(--acento); max-width: 34ch; margin: 0 auto 32px; }
+.hero .botoes { justify-content: center; }
+.hero-firma { margin-top: 34px; font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase; color: var(--texto-suave); }
+.hero-video { margin: 0; position: relative; justify-self: center; width: min(100%, 420px); }
+.hero-video::before { content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 1px solid var(--acento); border-radius: 2px; opacity: .55; }
+.hero-video .cine-video { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 736 / 1240; max-height: 78vh;
+  object-fit: cover; object-position: center; border-radius: 2px; background: #111;
+  -webkit-mask-image: none; mask-image: none; box-shadow: 0 40px 80px -40px rgb(28 24 21 / .55); }
+
+/* Fotos: en marco, nítidas, junto al texto */
+.secao:has(> .arte) {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(32px, 5vw, 90px); align-items: center;
+  padding-inline: max(var(--gutter), calc((100% - var(--largura)) / 2));
+}
+.secao:has(> .arte) > .secao-grade,
+.secao:has(> .arte) > .catalogo { grid-template-columns: minmax(0, 1fr); max-width: none; grid-row: 1; }
+.secao:has(> .arte) > .secao-grade > .painel { grid-column: 1; }
+.secao:has(> .arte--direita) > :not(.arte) { grid-column: 1; }
+.secao:has(> .arte--esquerda) > :not(.arte) { grid-column: 2; }
+.arte {
+  position: relative; inset: auto; z-index: auto; grid-row: 1; width: 100% !important; height: auto !important;
+  aspect-ratio: 4 / 5; max-height: 82vh; object-fit: cover; border-radius: 2px; opacity: 1 !important;
+  mix-blend-mode: normal !important; -webkit-mask-image: none !important; mask-image: none !important;
+  transform: none !important; box-shadow: 0 40px 80px -45px rgb(28 24 21 / .5);
+}
+.arte--direita { grid-column: 2; }
+.arte--esquerda { grid-column: 1; }
+.arte--retrato { aspect-ratio: 4 / 5; object-position: center 30%; max-width: 460px; justify-self: center; }
+.arte--produto { object-fit: cover; aspect-ratio: 5 / 7; max-width: 440px; justify-self: center; }
+.arte--video { object-position: center 60%; }
+.secao:has(> .arte) .catalogo--esquerda > .painel--cabecalho,
+.secao:has(> .arte) .catalogo--esquerda > .painel--lista { grid-column: 1; grid-row: auto; }
+.secao:has(> .arte) .catalogo > .painel--cabecalho { position: relative; top: 0; }
+
+/* Paneles más sobrios */
+.painel { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgb(251 248 244 / .92); }
+.secao--noite .painel { background: rgb(30 26 23 / .85); }
+.modalidade--private { background: var(--escuro); }
+
+@media (max-width: 860px) {
+  .hero { padding: 0; min-height: 100svh; position: relative; overflow: hidden; align-items: end; }
+  .hero-grade { display: block; }
+  .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-video::before { content: none; }
+  .hero-video .cine-video { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; aspect-ratio: auto; border-radius: 0; box-shadow: none; }
+  .hero-video::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(16 13 11 / .35) 0%, rgb(16 13 11 / .15) 35%, rgb(16 13 11 / .78) 72%, rgb(16 13 11 / .9) 100%); }
+  .hero-texto { position: relative; z-index: 1; padding: 0 var(--gutter) 44px; color: #fbf7f1; }
+  .hero .titulo-abertura { color: #fbf7f1; font-size: clamp(36px, 10vw, 48px); }
+  .hero .apoio { color: rgb(251 247 241 / .85); }
+  .hero-cita { color: #e3c796; margin-bottom: 24px; }
+  .hero-linea { background: #e3c796; }
+  .hero-texto .sobretitulo { color: #e3c796; }
+  .hero-firma { color: rgb(251 247 241 / .7); margin-top: 24px; letter-spacing: .14em; font-size: 10.5px; }
+  .hero .botao--linha { color: #fbf7f1; border-color: rgb(251 247 241 / .8); }
+  .topo:not(.rolou) .marca-texto, .topo:not(.rolou) .menu-btn span { color: #fbf7f1; }
+  .topo:not(.rolou) .menu-btn span { background: #fbf7f1; }
+  .topo:not(.rolou) .idioma { color: #fbf7f1; border-color: rgb(251 247 241 / .4); }
+
+  .secao:has(> .arte) { grid-template-columns: 1fr; padding-top: 12vh !important; row-gap: 28px; }
+  .secao:has(> .arte) > * { grid-column: 1 !important; grid-row: auto !important; }
+  .arte { position: relative !important; left: auto !important; right: auto !important; top: auto !important; height: auto !important;
+    max-height: 70vh; aspect-ratio: 4 / 5; opacity: 1 !important; -webkit-mask-image: none !important; mask-image: none !important; }
+  .arte--retrato { aspect-ratio: 1; }
+  .menu-aberto .topo .marca-texto, .menu-aberto .topo .idioma { color: var(--texto); }
+  .menu-aberto .topo .menu-btn span { background: var(--texto); }
+  .hero .botao:not(.botao--linha) { background: #d9bb86; color: var(--escuro); }
+}
