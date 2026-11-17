@@ -503,3 +503,11 @@ body::after { content: none; }
   .menu-aberto .topo .menu-btn span { background: var(--texto); }
   .hero .botao:not(.botao--linha) { background: #d9bb86; color: var(--escuro); }
 }
+
+/* Experiencia a domicilio: salmón suave (2026-11-17) */
+.modalidade--private { background: #f3d9cc; color: var(--texto); border-color: rgb(28 24 21 / .08); }
+.modalidade--private p, .private-lugares span { color: #5e4a40; }
+.modalidade--private .private-lema, .modalidade--private .zonas { color: var(--texto) !important; }
+.modalidade--private .modalidade-tag { color: #8a5a3c; }
+.private-lugares li { border-top-color: rgb(138 90 60 / .35); }
+.private-lugares strong { color: #8a5a3c; }
