@@ -347,3 +347,19 @@ strong { font-weight: 500; }
 @media (min-width: 861px) {
   .topo { background: rgb(248 245 240 / .96); box-shadow: 0 1px 0 var(--linha); }
 }
+
+/* Botón de sonido del video de portada */
+.som {
+  position: absolute; right: 22px; bottom: 22px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px 11px 14px; cursor: pointer;
+  font: 500 11px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--blanco);
+  background: rgb(20 17 15 / .55); border: 1px solid rgb(255 253 250 / .45); border-radius: 999px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: background .3s, border-color .3s;
+}
+.som:hover { background: rgb(20 17 15 / .75); border-color: var(--oro-claro); }
+.som svg { width: 18px; height: 18px; }
+.som .som-on, .som.ligado .som-off { display: none; }
+.som.ligado .som-on { display: block; }
+@media (max-width: 860px) {
+  .som { top: 92px; bottom: auto; right: var(--gutter); }
+}

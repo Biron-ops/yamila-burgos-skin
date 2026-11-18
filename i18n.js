@@ -82,6 +82,8 @@ window.I18N_EN = {
   "fac.pie": "Not sure which to choose?",
   "fac.pieLink": "Ask for an assessment",
   "nav.domicilio": "At home",
+  "som.ativar": "Sound on",
+  "som.desativar": "Sound off",
   "cred.1": "years of experience",
   "cred.2t": "Private studio",
   "cred.2": "in Fuengirola",
@@ -111,6 +113,8 @@ window.I18N_EN = {
 };
 
 window.I18N_ES_JS = {
+  "som.ativar": "Activar sonido",
+  "som.desativar": "Silenciar",
   "js.reservar": "Reservar",
   "js.sesiones": "sesiones",
   "js.verificar": "Revisa los campos marcados.",

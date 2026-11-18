@@ -117,6 +117,28 @@
       else video.play().catch(() => {});
     }
     addEventListener("scroll", () => cine.classList.toggle("andou", scrollY > 40), { passive: true });
+
+    /* Botón de sonido: el video arranca en silencio (los navegadores lo exigen) */
+    const som = $(".som", cine);
+    if (som && video) {
+      const rotular = () => {
+        const ligado = !video.muted;
+        som.setAttribute("aria-pressed", String(ligado));
+        som.classList.toggle("ligado", ligado);
+        const k = ligado ? "som.desativar" : "som.ativar";
+        const span = $("span", som);
+        span.textContent = t(k);
+      };
+      som.addEventListener("click", () => {
+        video.muted = !video.muted;
+        if (!video.muted) { video.volume = 1; video.play().catch(() => {}); }
+        rotular();
+      });
+      // si sale de pantalla, se silencia para no molestar
+      new IntersectionObserver(([e]) => { if (!e.isIntersecting && !video.muted) { video.muted = true; rotular(); } }, { threshold: 0 }).observe(cine);
+      $(".idioma")?.addEventListener("click", rotular);
+      rotular();
+    }
   }
 
   /* ── Video corporal: solo se reproduce cuando está en pantalla ─────────── */
