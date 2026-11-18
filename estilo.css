@@ -358,3 +358,7 @@ strong { font-weight: 500; }
 /* Logo en la portada, en el salmón de la marca */
 .hero-logo { width: clamp(220px, 22vw, 320px); height: auto; margin-bottom: 34px; }
 @media (max-width: 860px) { .hero-logo { content: url("assets/marca/logo-salmon.webp"); width: 210px; margin-bottom: 24px; } }
+
+/* Fondo de monogramas YB en rosa suave (todas las secciones menos la portada) */
+.bloco { background-image: url("assets/marca/patron-yb.png"); background-size: 130px 130px; background-repeat: repeat; background-position: center top; }
+@media (max-width: 560px) { .bloco { background-size: 96px 96px; } }
