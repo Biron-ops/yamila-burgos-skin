@@ -86,5 +86,11 @@ window.YB = {
     { sesiones: [4, 6],
       es: { n: "Skin Experience", d: "Programa facial personalizado según las necesidades de cada piel." },
       en: { n: "Skin Experience", d: "A bespoke facial programme tailored to each skin's needs." } },
+    { sesiones: [4, 6],
+      es: { n: "Relax Ritual", d: "Masajes relajantes para soltar el estrés y descansar cuerpo y mente." },
+      en: { n: "Relax Ritual", d: "Relaxing massages to release stress and rest body and mind." } },
+    { sesiones: [4, 6],
+      es: { n: "Deep Release", d: "Masajes descontracturantes para aliviar tensiones de espalda, cuello y hombros." },
+      en: { n: "Deep Release", d: "Deep tissue massages to ease tension in back, neck and shoulders." } },
   ],
 };

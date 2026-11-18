@@ -170,7 +170,8 @@ strong { font-weight: 500; }
 .lista-traco li { font: 400 clamp(20px, 1.6vw, 23px)/1.3 var(--serif); color: var(--tinta); padding: 14px 0; border-bottom: 1px solid var(--linha); }
 
 /* ── Programas ─────────────────────────────────────────────────────────── */
-.programas { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.programas { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; }
+.programas > .programa { flex: 0 1 calc((100% - 44px) / 3); }
 .programa {
   display: flex; flex-direction: column; padding: clamp(32px, 3vw, 46px); background: var(--blanco);
   border: 1px solid var(--linha); border-top: 2px solid var(--oro); transition: transform .4s var(--ease), box-shadow .4s var(--ease);
@@ -281,7 +282,8 @@ strong { font-weight: 500; }
   .menu-aberto .menu { opacity: 1; pointer-events: auto; }
   .menu-aberto { overflow: hidden; }
   .menu-aberto .topo { background: var(--marfil); backdrop-filter: none; -webkit-backdrop-filter: none; }
-  .programas { grid-template-columns: 1fr; max-width: 640px; }
+  .programas { max-width: 640px; }
+  .programas > .programa { flex-basis: 100%; }
   .modalidades, .contato { grid-template-columns: 1fr; }
 }
 
