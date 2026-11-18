@@ -353,9 +353,8 @@ strong { font-weight: 500; }
   .som { top: 92px; bottom: auto; right: var(--gutter); }
 }
 
-/* Logo de fondo (marca de agua fija, muy suave) */
-body::before {
-  content: ""; position: fixed; inset: 0; z-index: 40; pointer-events: none;
-  background: url("assets/marca/logo-oscuro.webp") center 55% / min(78vw, 980px) auto no-repeat;
-  opacity: .045; mix-blend-mode: multiply;
-}
+
+
+/* Logo en la portada, en el salmón de la marca */
+.hero-logo { width: clamp(220px, 22vw, 320px); height: auto; margin-bottom: 34px; }
+@media (max-width: 860px) { .hero-logo { content: url("assets/marca/logo-salmon.webp"); width: 210px; margin-bottom: 24px; } }
