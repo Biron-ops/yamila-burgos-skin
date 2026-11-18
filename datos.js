@@ -58,6 +58,12 @@ window.YB = {
     { duracion: "", precio: "",
       es: { n: "Drenaje linfático manual", d: "Técnica manual orientada a favorecer el drenaje y proporcionar bienestar y ligereza." },
       en: { n: "Manual lymphatic drainage", d: "A hands-on technique that supports drainage and brings wellbeing and lightness." } },
+    { duracion: "", precio: "",
+      es: { n: "Masajes relajantes", d: "Un ritual de calma con movimientos envolventes y aceites, para soltar el estrés y descansar cuerpo y mente." },
+      en: { n: "Relaxing massages", d: "A calming ritual of flowing movements and oils to release stress and rest body and mind." } },
+    { duracion: "", precio: "",
+      es: { n: "Masajes descontracturantes", d: "Trabajo manual profundo sobre espalda, cuello y hombros para aliviar tensiones y contracturas." },
+      en: { n: "Deep tissue massages", d: "Deep hands-on work on back, neck and shoulders to ease tension and knots." } },
   ],
 
   /* ── MEN'S SKIN & WELLNESS ─────────────────────────────────────────── */
