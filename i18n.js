@@ -9,7 +9,7 @@ window.I18N_EN = {
   "nav.reservar": "Book",
 
   "hero.h1": "Natural beauty, mindful care and wellbeing.",
-  "hero.apoio": "Advanced non-surgical skincare in my Fuengirola studio and at home, from Málaga to Estepona.",
+  "hero.apoio": "Facial and body treatments and relaxation experiences in my Fuengirola studio or at home across the Costa del Sol.",
 
   "cta.reservar": "Book a treatment",
   "cta.ver": "See treatments",
@@ -26,7 +26,6 @@ window.I18N_EN = {
   "mod.h2": "Two ways to look after yourself",
   "mod.estudio": "My private studio, with the full menu and in-studio skin assessment. One-to-one care, no waiting, no rush.",
   "mod.h3dom": "Your experience, wherever you are",
-  "mod.sello": "Bookings from €100 have no travel supplement.",
 
   "fac.h2": "Facial menu",
   "fac.p": "Six essential treatments, tailored to your skin.",
@@ -58,6 +57,7 @@ window.I18N_EN = {
   "res.p": "Photos of my own work, shared with each client's consent and unretouched. Every skin responds at its own pace.",
   "res.c1": "Cosmelan® method · pigmentation and uneven tone",
   "res.c2": "Anti-ageing protocol · expression lines (before / after)",
+  "res.c3": "Facial treatment · redness and radiance (before / after)",
 
   "res2.h2": "Book your appointment",
   "res2.p": "WhatsApp is the quickest way. If you prefer, leave your details and I'll get back to you.",
@@ -84,12 +84,6 @@ window.I18N_EN = {
   "nav.domicilio": "At home",
   "som.ativar": "Sound on",
   "som.desativar": "Sound off",
-  "cred.1": "years of experience",
-  "cred.2t": "Private studio",
-  "cred.2": "in Fuengirola",
-  "cred.3t": "At home",
-  "cred.3": "from Málaga to Estepona",
-  "cred.4": "and Naturnua · professional skincare",
   "filo.eyebrow": "My philosophy",
   "fac.eyebrow": "Treatments",
   "cor.eyebrow": "Treatments",

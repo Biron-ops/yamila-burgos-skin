@@ -110,17 +110,6 @@ strong { font-weight: 500; }
 .hero-media { position: relative; overflow: hidden; background: var(--tinta); }
 .hero-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 
-/* ── Credenciales ──────────────────────────────────────────────────────── */
-.credenciales {
-  list-style: none; margin: 0; padding: 0 var(--gutter); background: var(--blanco);
-  border-block: 1px solid var(--linha);
-  display: grid; grid-template-columns: repeat(4, 1fr);
-}
-.credenciales li { display: grid; gap: 4px; justify-items: center; text-align: center; padding: 34px 16px; }
-.credenciales li + li { border-left: 1px solid var(--linha); }
-.credenciales strong { font: 400 clamp(22px, 2vw, 28px)/1.1 var(--serif); color: var(--tinta); }
-.credenciales span { font-size: 13px; letter-spacing: .04em; color: var(--suave); }
-
 /* ── Bloques ───────────────────────────────────────────────────────────── */
 .bloco { padding: var(--espaco) var(--gutter); }
 .bloco > * { max-width: var(--ancho); margin-inline: auto; }
@@ -132,7 +121,7 @@ strong { font-weight: 500; }
 .cabeca--centro { text-align: center; display: flex; flex-direction: column; align-items: center; }
 
 .duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 110px); align-items: center; }
-.duo--inverso > .foto { order: 2; }
+.duo--inverso > .foto, .duo--inverso > .foto-par { order: 2; }
 .texto { max-width: 520px; }
 .texto > :last-child { margin-bottom: 0; }
 .texto .botao, .texto .link-seta { margin-top: 14px; }
@@ -143,6 +132,8 @@ strong { font-weight: 500; }
 .foto--retrato { aspect-ratio: 4 / 5; }
 .foto--retrato img { object-position: center 20%; }
 .foto--paisagem { aspect-ratio: 3 / 2; }
+.foto-par { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.foto-par .foto { aspect-ratio: 3 / 5; }
 
 .cita { font: italic 400 clamp(24px, 2.1vw, 32px)/1.3 var(--serif); color: var(--tinta); padding-left: 22px; border-left: 1px solid var(--oro); margin: 28px 0; }
 .nota { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--oro); }
@@ -207,11 +198,11 @@ strong { font-weight: 500; }
 .lugares strong { font: 400 23px/1.1 var(--serif); color: var(--tinta); }
 .lugares span { font-size: 14px; line-height: 1.55; color: var(--suave); }
 .zonas { font: italic 400 19px/1.55 var(--serif); color: var(--texto) !important; margin-bottom: 18px !important; }
-.sello { font-size: 13px; letter-spacing: .06em; color: var(--oro) !important; padding-top: 16px; border-top: 1px solid var(--linha); width: 100%; }
 
 /* ── Resultados ────────────────────────────────────────────────────────── */
 .resultados { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 22px; align-items: start; }
 .resultado { margin: 0; }
+.resultado:first-child { grid-row: span 2; }
 .resultado img { width: 100%; height: auto; }
 .resultado figcaption { padding-top: 16px; font-size: 13px; letter-spacing: .04em; color: var(--suave); }
 
@@ -289,9 +280,6 @@ strong { font-weight: 500; }
   .menu-aberto .topo { background: var(--marfil); backdrop-filter: none; -webkit-backdrop-filter: none; }
   .programas { grid-template-columns: 1fr; max-width: 640px; }
   .modalidades, .contato { grid-template-columns: 1fr; }
-  .credenciales { grid-template-columns: repeat(2, 1fr); }
-  .credenciales li:nth-child(3) { border-left: 0; }
-  .credenciales li:nth-child(n+3) { border-top: 1px solid var(--linha); }
 }
 
 /* ── Móvil ─────────────────────────────────────────────────────────────── */
@@ -311,7 +299,9 @@ strong { font-weight: 500; }
   .menu-aberto .topo .menu-btn span { background: var(--tinta); }
 
   .duo, .carta, .resultados { grid-template-columns: 1fr; }
-  .duo--inverso > .foto { order: 0; }
+  .duo--inverso > .foto, .duo--inverso > .foto-par { order: 0; }
+  .foto-par .foto { aspect-ratio: 3 / 4.4; }
+  .resultado:first-child { grid-row: auto; }
   .texto { max-width: none; }
   .foto--carta { position: relative; top: 0; aspect-ratio: 16 / 10; }
   .foto--alta, .foto--retrato { aspect-ratio: 4 / 4.4; }
@@ -328,7 +318,6 @@ strong { font-weight: 500; }
   .topo-acoes { gap: 8px; }
   .botoes { flex-direction: column; width: 100%; }
   .botao { width: 100%; }
-  .credenciales li { padding: 24px 10px; }
   .carta-item { grid-template-columns: 36px minmax(0, 1fr); }
   .carta-acao { grid-column: 2; justify-items: start; }
   .carta-acao .link-seta { opacity: 1; transform: none; }
@@ -362,4 +351,11 @@ strong { font-weight: 500; }
 .som.ligado .som-on { display: block; }
 @media (max-width: 860px) {
   .som { top: 92px; bottom: auto; right: var(--gutter); }
+}
+
+/* Logo de fondo (marca de agua fija, muy suave) */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: 40; pointer-events: none;
+  background: url("assets/marca/logo-oscuro.webp") center 55% / min(78vw, 980px) auto no-repeat;
+  opacity: .045; mix-blend-mode: multiply;
 }

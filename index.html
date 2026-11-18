@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/video/apertura-poster.webp?v=4">
-  <link rel="stylesheet" href="estilo.css?v=5">
+  <link rel="stylesheet" href="estilo.css?v=6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,7 +58,7 @@
     <div class="hero-texto">
       <span class="eyebrow">Advanced Skin &amp; Wellness</span>
       <h1 data-i18n="hero.h1">Belleza natural, cuidado consciente y bienestar.</h1>
-      <p class="hero-apoio" data-i18n="hero.apoio">Estética avanzada no quirúrgica en mi estudio de Fuengirola y a domicilio, de Málaga a Estepona.</p>
+      <p class="hero-apoio" data-i18n="hero.apoio">Tratamientos faciales, corporales y experiencias de relajación en mi estudio de Fuengirola o a domicilio en la Costa del Sol.</p>
       <div class="botoes">
         <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
         <a href="#faciales" class="botao botao--linha" data-i18n="cta.ver">Ver tratamientos</a>
@@ -73,14 +73,6 @@
       </button>
     </div>
   </section>
-
-  <!-- CREDENCIALES -->
-  <ul class="credenciales" aria-label="Yamila Burgos Skin">
-    <li><strong>+10</strong><span data-i18n="cred.1">años de experiencia</span></li>
-    <li><strong data-i18n="cred.2t">Estudio privado</strong><span data-i18n="cred.2">en Fuengirola</span></li>
-    <li><strong data-i18n="cred.3t">A domicilio</strong><span data-i18n="cred.3">de Málaga a Estepona</span></li>
-    <li><strong>Mesoestetic</strong><span data-i18n="cred.4">y Naturnua · cosmética profesional</span></li>
-  </ul>
 
   <!-- FILOSOFÍA -->
   <section id="filosofia" class="bloco">
@@ -117,9 +109,14 @@
   <!-- CORPORALES -->
   <section id="corporales" class="bloco">
     <div class="duo duo--inverso">
-      <figure class="foto foto--alta revelar">
-        <video class="video-corpo" src="assets/video/corporal.mp4" poster="assets/video/corporal-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
-      </figure>
+      <div class="foto-par revelar">
+        <figure class="foto">
+          <video class="video-corpo" src="assets/video/corporal.mp4" poster="assets/video/corporal-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+        </figure>
+        <figure class="foto">
+          <img src="assets/tratamientos/masaje-abdominal.webp" alt="Masaje abdominal manual en camilla" loading="lazy" width="1200" height="1786">
+        </figure>
+      </div>
       <div class="texto revelar">
         <span class="eyebrow" data-i18n="cor.eyebrow">Tratamientos</span>
         <h2 data-i18n="cor.h2">Tratamientos corporales</h2>
@@ -181,7 +178,6 @@
         </ul>
         <p data-i18n="mod.dom2">Llevo la aparatología, la cosmética profesional y todo lo necesario. Tú solo tienes que disfrutar.</p>
         <p class="zonas">Málaga · Torremolinos · Benalmádena · Fuengirola · Mijas · Marbella · Nueva Andalucía · Puerto Banús · San Pedro de Alcántara · Estepona</p>
-        <p class="sello" data-i18n="mod.sello">Reservas desde 100 € sin suplemento de desplazamiento.</p>
         <a href="#" class="botao" data-wa="domicilio" data-i18n="cta.domicilio">Reservar mi experiencia a domicilio</a>
       </article>
     </div>
@@ -203,6 +199,10 @@
         <img src="assets/resultados/facial-antes-despues.webp?v=3" alt="Antes y después de un tratamiento facial antiedad: líneas de expresión suavizadas" loading="lazy" width="1536" height="1024">
         <figcaption data-i18n="res.c2">Protocolo antiedad · líneas de expresión (antes / después)</figcaption>
       </figure>
+      <figure class="resultado revelar">
+        <img src="assets/resultados/facial-rojeces-antes-despues.webp" alt="Antes y después de un tratamiento facial: rojeces calmadas y piel más luminosa" loading="lazy" width="2378" height="1556">
+        <figcaption data-i18n="res.c3">Tratamiento facial · rojeces y luminosidad (antes / después)</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -210,7 +210,7 @@
   <section id="sobre-mi" class="bloco bloco--tom">
     <div class="duo duo--inverso">
       <figure class="foto foto--retrato revelar">
-        <img src="assets/img/sobre.webp?v=3" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy" width="1000" height="1000">
+        <img src="assets/img/yamila-retrato.webp" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy" width="1200" height="1800">
       </figure>
       <div class="texto revelar">
         <span class="eyebrow" data-i18n="sobre.eyebrow">Sobre mí</span>
@@ -312,7 +312,7 @@
 
 <script src="config.js"></script>
 <script src="datos.js"></script>
-<script src="i18n.js?v=5"></script>
+<script src="i18n.js?v=6"></script>
 <script src="app.js?v=5"></script>
 </body>
 </html>
