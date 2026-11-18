@@ -10,9 +10,6 @@ window.I18N_EN = {
 
   "hero.h1": "Natural beauty, mindful care and wellbeing.",
   "hero.apoio": "Advanced non-surgical skincare in my Fuengirola studio and at home, from Málaga to Estepona.",
-  "hero.m2": "I'm not here to change your face. I'm here to keep your skin healthy and looking like you.",
-  "hero.firma": "Yamila Burgos · Beauty therapist · Cosmetologist · Dermocosmiatrist",
-  "hero.m3": "First I listen to your skin. Then we choose the treatment together.",
 
   "cta.reservar": "Book a treatment",
   "cta.ver": "See treatments",
@@ -24,51 +21,43 @@ window.I18N_EN = {
 
   "filo.h2": "The beauty of feeling good about yourself.",
   "filo.p1": "I believe true beauty goes beyond the skin. It's confidence, self-assurance and wellbeing.",
-  "filo.p2": "With more than 10 years of experience, I combine advanced devices, hands-on techniques and high-quality professional skincare to offer bespoke treatments that enhance your natural beauty.",
   "filo.nota": "Treatments for women and men.",
 
   "mod.h2": "Two ways to look after yourself",
-  "mod.estudio": "A private studio where I carry out every facial, body and device-based treatment. One-to-one care, no waiting, no rush.",
-  "mod.e1": "Full treatment menu",
-  "mod.e2": "Advanced devices",
-  "mod.e3": "In-studio skin assessment",
+  "mod.estudio": "My private studio, with the full menu and in-studio skin assessment. One-to-one care, no waiting, no rush.",
   "mod.h3dom": "Your experience, wherever you are",
-  "mod.domicilio": "A personalised beauty and wellness experience that comes to your home, hotel or villa on the Costa del Sol.",
   "mod.sello": "Bookings from €100 have no travel supplement.",
 
   "fac.h2": "Facial menu",
-  "fac.p": "Six essential treatments. Each one is tailored to your skin after a personal assessment.",
+  "fac.p": "Six essential treatments, tailored to your skin.",
 
   "cor.h2": "Body treatments",
-  "cor.p": "Four lines of work combining devices and hands-on techniques. The best results come with consistency: I design each programme around your goal.",
+  "cor.p": "Devices and hands-on techniques, in a programme designed around your goal.",
   "cor.link": "See body programmes",
-
 
   "men.p": "A facial and body care experience designed for men who value their image and wellbeing.",
 
-  "prog.p": "Bespoke programmes to see real results and keep them. Packs can be 4 or 6 sessions, depending on the treatment and your personal assessment.",
-  "prog.nota": "Every programme starts with an assessment to decide the number of sessions and how often.",
+  "prog.p": "4 or 6-session packs to see real results and keep them.",
 
-  "rit.p": "What you do at home every day matters as much as what we do in the studio. The right routine is what keeps the results.",
+  "rit.p": "Your home routine is what keeps the studio results.",
   "rit.1t": "Cleanse",
-  "rit.1": "Morning and night, with a cleanser suited to your skin type.",
+  "rit.1": "Morning and night.",
   "rit.2t": "Treat",
-  "rit.2": "A serum with the active your skin needs: hydration, pigmentation, pores or firmness.",
+  "rit.2": "The serum your skin needs.",
   "rit.3t": "Moisturise",
-  "rit.3": "A cream that respects your skin barrier.",
+  "rit.3": "Respecting your skin barrier.",
   "rit.4t": "Sun protection",
-  "rit.4": "Every day of the year, winter included. On the Costa del Sol, no exceptions.",
-  "rit.marcas": "I work with Mesoestetic and Naturnua professional skincare and recommend your home routine after each treatment.",
+  "rit.4": "Every day of the year.",
+  "rit.marcas": "Mesoestetic and Naturnua professional skincare.",
 
   "sobre.cargo": "Beauty therapist · Cosmetologist · Dermocosmiatrist",
-  "sobre.p1": "With more than 10 years in the beauty industry, I have developed a way of working based on personalised care, ongoing training and respect for natural beauty.",
-  "sobre.p2": "My experience combines facial and body aesthetics, advanced devices and specialised hands-on techniques.",
-  "sobre.p3": "Yamila Burgos Skin was born from my passion for offering a beauty and wellness experience where professionalism, trust and attention to detail make the difference.",
+  "sobre.p1": "More than 10 years in facial and body aesthetics, combining advanced devices, hands-on techniques and professional skincare. I work with personalised care, ongoing training and respect for natural beauty.",
+  "sobre.p3": "Yamila Burgos Skin was born from my passion for aesthetics where professionalism, trust and detail make the difference.",
 
   "res.h2": "Real results",
-  "res.p": "Photos of my own work, shared with each client's consent and unretouched. Every skin responds at its own pace: I don't promise guaranteed results, I promise honest treatment.",
+  "res.p": "Photos of my own work, shared with each client's consent and unretouched. Every skin responds at its own pace.",
   "res.c1": "Cosmelan® method · pigmentation and uneven tone",
-  "res.c2": "Anti-ageing protocol · expression lines. Before on the left, after on the right.",
+  "res.c2": "Anti-ageing protocol · expression lines (before / after)",
 
   "res2.h2": "Book your appointment",
   "res2.p": "WhatsApp is the quickest way. If you prefer, leave your details and I'll get back to you.",
@@ -82,7 +71,7 @@ window.I18N_EN = {
   "rod.local": "Studio in Fuengirola · At home from Málaga to Estepona",
 
   "filo.p3": "Because when you feel good about yourself, it shows.",
-  "mod.p": "A personalised beauty and wellness experience, in my studio or wherever you are on the Costa del Sol.",
+  "mod.p": "In my Fuengirola studio or wherever you are on the Costa del Sol.",
   "mod.l1t": "Homes",
   "mod.l1": "The calm of your own home, turned into a treatment room.",
   "mod.l2t": "Hotels",
@@ -90,9 +79,8 @@ window.I18N_EN = {
   "mod.l3t": "Villas",
   "mod.l3": "Private rituals, also for groups and special occasions.",
   "mod.dom2": "I bring the devices, the professional skincare and everything needed. All you have to do is enjoy.",
-  "fac.pie": "Not sure which to choose? I'll recommend yours after assessing your skin.",
+  "fac.pie": "Not sure which to choose?",
   "fac.pieLink": "Ask for an assessment",
-  "men.p2": "Bespoke treatments combining technology, specialised techniques and attention to detail.",
   /* Textos generados por app.js */
   "js.reservar": "Book",
   "js.sesiones": "sessions",

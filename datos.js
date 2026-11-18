@@ -63,13 +63,9 @@ window.YB = {
   /* ── MEN'S SKIN & WELLNESS ─────────────────────────────────────────── */
   hombres: [
     { es: "Limpieza facial profunda", en: "Deep facial cleanse" },
-    { es: "Tratamientos faciales personalizados", en: "Bespoke facials" },
-    { es: "Tratamientos antiedad", en: "Anti-ageing treatments" },
-    { es: "Aparatología facial", en: "Facial device treatments" },
-    { es: "Tratamientos corporales", en: "Body treatments" },
-    { es: "Drenaje linfático", en: "Lymphatic drainage" },
+    { es: "Antiedad y aparatología facial", en: "Anti-ageing and facial devices" },
+    { es: "Corporales y drenaje linfático", en: "Body treatments and lymphatic drainage" },
     { es: "Masajes relajantes", en: "Relaxing massages" },
-    { es: "Programas de cuidado facial", en: "Facial care programmes" },
   ],
 
   /* ── YB SKIN PROGRAMS · BONOS ──────────────────────────────────────────
