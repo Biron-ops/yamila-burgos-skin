@@ -120,7 +120,7 @@
   }
 
   /* ── Video corporal: solo se reproduce cuando está en pantalla ─────────── */
-  $$("video.arte--video").forEach((v) => {
+  $$("video.video-corpo").forEach((v) => {
     if (reduzir) return;
     new IntersectionObserver(([e]) => {
       if (e.isIntersecting) { v.preload = "auto"; v.play().catch(() => {}); } else v.pause();

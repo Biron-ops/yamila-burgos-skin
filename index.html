@@ -10,12 +10,12 @@
   <meta property="og:image" content="assets/og.jpg">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_GB">
-  <meta name="theme-color" content="#f5f0ea">
+  <meta name="theme-color" content="#f7f3ee">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/video/apertura-poster.webp?v=3">
-  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/video/apertura-poster.webp?v=4">
+  <link rel="stylesheet" href="estilo.css?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,6 +41,7 @@
     <a href="#corporales" data-i18n="nav.corporales">Corporales</a>
     <a href="#hombres" data-i18n="nav.hombres">Men</a>
     <a href="#programas" data-i18n="nav.programas">Bonos</a>
+    <a href="#domicilio" data-i18n="nav.domicilio">A domicilio</a>
     <a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a>
   </nav>
   <div class="topo-acoes">
@@ -52,51 +53,123 @@
 
 <main>
 
-  <!-- APERTURA: texto centrado + video del tratamiento facial enmarcado -->
-  <section id="inicio" class="cine hero">
-    <div class="hero-grade">
-      <div class="hero-texto">
-        <span class="sobretitulo">Advanced Skin &amp; Wellness</span>
-        <span class="hero-linea" aria-hidden="true"></span>
-        <h1 class="titulo-abertura" data-i18n="hero.h1">Belleza natural, cuidado consciente y bienestar.</h1>
-        <p class="apoio" data-i18n="hero.apoio">Estética avanzada no quirúrgica en mi estudio de Fuengirola y a domicilio, de Málaga a Estepona.</p>
-        <div class="botoes">
-          <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
-          <a href="#faciales" class="botao botao--linha" data-i18n="cta.ver">Ver tratamientos</a>
-        </div>
+  <!-- PORTADA -->
+  <section id="inicio" class="hero cine">
+    <div class="hero-texto">
+      <span class="eyebrow">Advanced Skin &amp; Wellness</span>
+      <h1 data-i18n="hero.h1">Belleza natural, cuidado consciente y bienestar.</h1>
+      <p class="hero-apoio" data-i18n="hero.apoio">Estética avanzada no quirúrgica en mi estudio de Fuengirola y a domicilio, de Málaga a Estepona.</p>
+      <div class="botoes">
+        <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
+        <a href="#faciales" class="botao botao--linha" data-i18n="cta.ver">Ver tratamientos</a>
       </div>
-      <figure class="hero-video">
-        <video class="cine-video" src="assets/video/apertura.mp4?v=3" poster="assets/video/apertura-poster.webp?v=3" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
-      </figure>
+    </div>
+    <div class="hero-media">
+      <video class="cine-video" src="assets/video/apertura.mp4?v=4" poster="assets/video/apertura-poster.webp?v=4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
     </div>
   </section>
 
-  <!-- 01 FILOSOFÍA -->
-  <section id="filosofia" class="secao">
-    <img class="arte arte--direita" src="assets/img/filosofia.webp?v=3" alt="Yamila Burgos realizando una limpieza facial en su estudio" loading="lazy">
-    <div class="secao-grade">
-      <div class="painel revelar">
-        <span class="rotulo">01</span>
+  <!-- CREDENCIALES -->
+  <ul class="credenciales" aria-label="Yamila Burgos Skin">
+    <li><strong>+10</strong><span data-i18n="cred.1">años de experiencia</span></li>
+    <li><strong data-i18n="cred.2t">Estudio privado</strong><span data-i18n="cred.2">en Fuengirola</span></li>
+    <li><strong data-i18n="cred.3t">A domicilio</strong><span data-i18n="cred.3">de Málaga a Estepona</span></li>
+    <li><strong>Mesoestetic</strong><span data-i18n="cred.4">y Naturnua · cosmética profesional</span></li>
+  </ul>
+
+  <!-- FILOSOFÍA -->
+  <section id="filosofia" class="bloco">
+    <div class="duo">
+      <figure class="foto foto--alta revelar">
+        <img src="assets/img/filosofia.webp?v=3" alt="Yamila Burgos realizando una limpieza facial en su estudio" loading="lazy" width="1104" height="1460">
+      </figure>
+      <div class="texto revelar">
+        <span class="eyebrow" data-i18n="filo.eyebrow">Mi filosofía</span>
         <h2 data-i18n="filo.h2">La belleza de sentirte bien contigo misma.</h2>
         <p data-i18n="filo.p1">Creo que la verdadera belleza va más allá de la piel. Es confianza, seguridad y bienestar.</p>
-        <p class="filo-cierre" data-i18n="filo.p3">Porque cuando te sentís bien con vos misma, se nota.</p>
+        <p class="cita" data-i18n="filo.p3">Porque cuando te sentís bien con vos misma, se nota.</p>
         <p class="nota" data-i18n="filo.nota">Tratamientos para mujeres y hombres.</p>
       </div>
     </div>
   </section>
 
-  <!-- 02 ESTUDIO / DOMICILIO -->
-  <section id="modalidades" class="secao secao--larga">
-    <div class="painel painel--cabecalho revelar">
-      <span class="rotulo">02</span>
+  <!-- FACIALES -->
+  <section id="faciales" class="bloco bloco--tom">
+    <div class="cabeca revelar">
+      <span class="eyebrow" data-i18n="fac.eyebrow">Tratamientos</span>
+      <h2 data-i18n="fac.h2">Carta facial</h2>
+      <p data-i18n="fac.p">Seis tratamientos esenciales, adaptados a tu piel.</p>
+    </div>
+    <div class="carta revelar">
+      <figure class="foto foto--carta">
+        <img src="assets/tratamientos/dermapen-foto.webp" alt="Tratamiento de microneedling con dermapen" loading="lazy" width="1024" height="620">
+      </figure>
+      <ol class="carta-lista" id="lista-faciales"></ol>
+    </div>
+    <p class="carta-pie revelar"><span data-i18n="fac.pie">¿No sabes cuál elegir?</span> <a href="#" class="link-seta" data-wa="consultar" data-i18n="fac.pieLink">Pedir valoración</a></p>
+  </section>
+
+  <!-- CORPORALES -->
+  <section id="corporales" class="bloco">
+    <div class="duo duo--inverso">
+      <figure class="foto foto--alta revelar">
+        <video class="video-corpo" src="assets/video/corporal.mp4" poster="assets/video/corporal-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+      </figure>
+      <div class="texto revelar">
+        <span class="eyebrow" data-i18n="cor.eyebrow">Tratamientos</span>
+        <h2 data-i18n="cor.h2">Tratamientos corporales</h2>
+        <p data-i18n="cor.p">Aparatología y técnicas manuales, en un programa diseñado según tu objetivo.</p>
+        <ol class="carta-lista carta-lista--simples" id="lista-corporales"></ol>
+        <a href="#programas" class="link-seta" data-i18n="cor.link">Ver programas corporales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEN -->
+  <section id="hombres" class="bloco bloco--tom">
+    <div class="duo">
+      <figure class="foto foto--paisagem revelar">
+        <img src="assets/tratamientos/hombres.webp?v=3" alt="Tratamiento facial masculino con mascarilla" loading="lazy" width="1350" height="898">
+      </figure>
+      <div class="texto revelar">
+        <span class="eyebrow">Men's Skin &amp; Wellness</span>
+        <h2 data-i18n="men.h2">Cuidado pensado para él.</h2>
+        <p data-i18n="men.p">Una experiencia de cuidado facial y corporal diseñada para el hombre que valora su imagen y bienestar.</p>
+        <ul class="lista-traco" id="lista-hombres"></ul>
+        <a href="#" class="botao" data-wa="hombres" data-i18n="cta.hombres">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS -->
+  <section id="programas" class="bloco">
+    <div class="cabeca cabeca--centro revelar">
+      <span class="eyebrow">YB Skin Programs</span>
+      <h2 data-i18n="prog.h2">Bonos de tratamiento</h2>
+      <p data-i18n="prog.p">Bonos de 4 o 6 sesiones para ver resultados reales y mantenerlos.</p>
+      <p class="promo" id="promo" hidden></p>
+    </div>
+    <ul class="programas revelar" id="bonos"></ul>
+  </section>
+
+  <!-- ESTUDIO / DOMICILIO -->
+  <section id="domicilio" class="bloco bloco--tom">
+    <div class="cabeca cabeca--centro revelar">
+      <span class="eyebrow" data-i18n="mod.eyebrow">Dónde atiendo</span>
       <h2 data-i18n="mod.h2">Dos maneras de cuidarte</h2>
       <p data-i18n="mod.p">En mi estudio de Fuengirola o allí donde estés en la Costa del Sol.</p>
     </div>
     <div class="modalidades">
-      <article class="painel modalidade modalidade--private revelar">
-        <span class="modalidade-tag">YB Skin Private · Beauty &amp; Wellness Experience</span>
+      <article class="modalidade revelar">
+        <span class="modalidade-tag">YB Skin Studio</span>
+        <h3>Fuengirola</h3>
+        <p data-i18n="mod.estudio">Mi estudio privado, con la carta completa y diagnóstico de piel en cabina. Atención individual, sin esperas y sin prisas.</p>
+        <a href="#" class="botao botao--linha" data-wa="reservar" data-i18n="cta.reservarEstudio">Reservar en el estudio</a>
+      </article>
+      <article class="modalidade modalidade--private revelar">
+        <span class="modalidade-tag">YB Skin Private</span>
         <h3 data-i18n="mod.h3dom">Tu experiencia, donde estés</h3>
-        <ul class="private-lugares">
+        <ul class="lugares">
           <li><strong data-i18n="mod.l1t">Domicilios</strong><span data-i18n="mod.l1">La calma de tu casa, convertida en cabina.</span></li>
           <li><strong data-i18n="mod.l2t">Hoteles</strong><span data-i18n="mod.l2">Un momento para ti durante tu estancia.</span></li>
           <li><strong data-i18n="mod.l3t">Villas</strong><span data-i18n="mod.l3">Rituales privados, también para grupos y ocasiones especiales.</span></li>
@@ -106,109 +179,36 @@
         <p class="sello" data-i18n="mod.sello">Reservas desde 100 € sin suplemento de desplazamiento.</p>
         <a href="#" class="botao" data-wa="domicilio" data-i18n="cta.domicilio">Reservar mi experiencia a domicilio</a>
       </article>
-      <article class="painel modalidade revelar">
-        <span class="modalidade-tag">YB Skin Studio</span>
-        <h3>Fuengirola</h3>
-        <p data-i18n="mod.estudio">Mi estudio privado, con la carta completa y diagnóstico de piel en cabina. Atención individual, sin esperas y sin prisas.</p>
-        <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservarEstudio">Reservar en el estudio</a>
-      </article>
     </div>
   </section>
 
-  <!-- 03 FACIALES -->
-  <section id="faciales" class="secao secao--larga secao--carta">
-    <div class="carta-topo">
-      <div class="painel painel--cabecalho revelar">
-        <span class="rotulo">03</span>
-        <h2 data-i18n="fac.h2">Carta facial</h2>
-        <p data-i18n="fac.p">Seis tratamientos esenciales, adaptados a tu piel.</p>
-      </div>
-      <div class="carta-fotos revelar">
-        <img src="assets/tratamientos/limpieza.webp?v=3" alt="Limpieza facial detox de Yamila Burgos Skin" loading="lazy" width="1024" height="1024">
-        <img src="assets/tratamientos/dermapen.webp?v=3" alt="Tratamiento con dermapen y ácido hialurónico" loading="lazy" width="1024" height="1024">
-      </div>
+  <!-- RESULTADOS -->
+  <section id="resultados" class="bloco">
+    <div class="cabeca cabeca--centro revelar">
+      <span class="eyebrow" data-i18n="res.eyebrow">Antes y después</span>
+      <h2 data-i18n="res.h2">Resultados reales</h2>
+      <p data-i18n="res.p">Fotos de mi trabajo, con autorización de cada clienta y sin retoques. Cada piel responde a su ritmo.</p>
     </div>
-    <div class="painel carta revelar">
-      <ol class="carta-lista" id="lista-faciales"></ol>
-      <p class="carta-pie"><span data-i18n="fac.pie">¿No sabes cuál elegir?</span> <a href="#" class="link-seta" data-wa="consultar" data-i18n="fac.pieLink">Pedir valoración</a></p>
-    </div>
-  </section>
-
-  <!-- 04 CORPORALES -->
-  <section id="corporales" class="secao secao--catalogo">
-    <video class="arte arte--direita arte--video" src="assets/video/corporal.mp4" poster="assets/video/corporal-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
-    <div class="catalogo catalogo--esquerda">
-      <div class="painel painel--cabecalho revelar">
-        <span class="rotulo">04</span>
-        <h2 data-i18n="cor.h2">Tratamientos corporales</h2>
-        <p data-i18n="cor.p">Aparatología y técnicas manuales, en un programa diseñado según tu objetivo.</p>
-        <a href="#programas" class="link-seta" data-i18n="cor.link">Ver programas corporales</a>
-      </div>
-      <div class="painel painel--lista revelar">
-        <ol class="carta-lista carta-lista--corpo" id="lista-corporales"></ol>
-      </div>
+    <div class="resultados">
+      <figure class="resultado revelar">
+        <img src="assets/resultados/cosmelan-antes-despues.webp?v=3" alt="Antes y después del método Cosmelan: manchas en la mejilla atenuadas" loading="lazy" width="1199" height="1312">
+        <figcaption data-i18n="res.c1">Método Cosmelan® · manchas y tono irregular</figcaption>
+      </figure>
+      <figure class="resultado revelar">
+        <img src="assets/resultados/facial-antes-despues.webp?v=3" alt="Antes y después de un tratamiento facial antiedad: líneas de expresión suavizadas" loading="lazy" width="1536" height="1024">
+        <figcaption data-i18n="res.c2">Protocolo antiedad · líneas de expresión (antes / después)</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- 05 LÁSER: oculta por ahora. Para volver a mostrarla, recuperar este bloque del historial de git (commit "Web Yamila Burgos Skin"). -->
-
-  <!-- 06 MEN -->
-  <section id="hombres" class="secao">
-    <div class="secao-grade secao-grade--hombres">
-      <div class="painel revelar">
-        <span class="rotulo">05</span>
-        <h2>Men's Skin &amp; Wellness</h2>
-        <p class="men-lema" data-i18n="men.p">Una experiencia de cuidado facial y corporal diseñada para el hombre que valora su imagen y bienestar.</p>
-        <a href="#" class="botao" data-wa="hombres" data-i18n="cta.hombres">Consultar por WhatsApp</a>
-      </div>
-      <div class="painel painel--hombres revelar">
-        <img class="hombres-foto" src="assets/tratamientos/hombres.webp?v=3" alt="Tratamiento facial masculino con mascarilla" loading="lazy" width="900" height="598">
-        <ul class="hombres" id="lista-hombres"></ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 07 YB SKIN PROGRAMS -->
-  <section id="programas" class="secao secao--programas">
-    <div class="catalogo">
-      <div class="painel painel--cabecalho revelar">
-        <span class="rotulo">06</span>
-        <h2>YB Skin Programs</h2>
-        <p data-i18n="prog.p">Bonos de 4 o 6 sesiones para ver resultados reales y mantenerlos.</p>
-        <p class="promo" id="promo" hidden></p>
-        <a href="#" class="botao" data-wa="bonos" data-i18n="cta.bonos">Consultar bonos</a>
-      </div>
-      <div class="painel painel--lista revelar">
-        <ul class="programas" id="bonos"></ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 08 SKIN RITUALS -->
-  <section id="rituales" class="secao">
-    <img class="arte arte--direita arte--produto" src="assets/img/rituals.webp?v=2" alt="Crema Cosmelan 2 de Mesoestetic" loading="lazy">
-    <div class="secao-grade">
-      <div class="painel revelar">
-        <span class="rotulo">07</span>
-        <h2>Skin Rituals</h2>
-        <p data-i18n="rit.p">Tu rutina en casa sostiene los resultados de cabina.</p>
-        <ol class="passos">
-          <li><strong data-i18n="rit.1t">Limpieza</strong><span data-i18n="rit.1">Mañana y noche.</span></li>
-          <li><strong data-i18n="rit.2t">Tratamiento</strong><span data-i18n="rit.2">El sérum que tu piel necesita.</span></li>
-          <li><strong data-i18n="rit.3t">Hidratación</strong><span data-i18n="rit.3">Respetando tu barrera cutánea.</span></li>
-          <li><strong data-i18n="rit.4t">Protección solar</strong><span data-i18n="rit.4">Todos los días del año.</span></li>
-        </ol>
-        <p class="marcas" data-i18n="rit.marcas">Cosmética profesional Mesoestetic y Naturnua.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 09 SOBRE MÍ -->
-  <section id="sobre-mi" class="secao">
-    <img class="arte arte--esquerda arte--retrato" src="assets/img/sobre.webp?v=3" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy">
-    <div class="secao-grade secao-grade--direita">
-      <div class="painel revelar">
-        <span class="rotulo">08</span>
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="bloco bloco--tom">
+    <div class="duo duo--inverso">
+      <figure class="foto foto--retrato revelar">
+        <img src="assets/img/sobre.webp?v=3" alt="Yamila Burgos, esteticista y dermocosmiatra" loading="lazy" width="1000" height="1000">
+      </figure>
+      <div class="texto revelar">
+        <span class="eyebrow" data-i18n="sobre.eyebrow">Sobre mí</span>
         <h2>Yamila Burgos</h2>
         <p class="cargo" data-i18n="sobre.cargo">Esteticista · Cosmetóloga · Dermocosmiatra</p>
         <p data-i18n="sobre.p1">Más de 10 años en estética facial y corporal, combinando aparatología avanzada, técnicas manuales y cosmética profesional. Trabajo con cuidado personalizado, formación continua y respeto por la belleza natural.</p>
@@ -218,36 +218,37 @@
     </div>
   </section>
 
-  <!-- 10 RESULTADOS -->
-  <section id="resultados" class="secao secao--larga">
-    <div class="painel painel--cabecalho revelar">
-      <span class="rotulo">09</span>
-      <h2 data-i18n="res.h2">Resultados reales</h2>
-      <p data-i18n="res.p">Fotos de mi trabajo, con autorización de cada clienta y sin retoques. Cada piel responde a su ritmo.</p>
+  <!-- RITUALES -->
+  <section id="rituales" class="bloco bloco--compacto">
+    <div class="cabeca cabeca--centro revelar">
+      <span class="eyebrow">Skin Rituals</span>
+      <h2 data-i18n="rit.h2">Tu rutina en casa</h2>
+      <p data-i18n="rit.p">Lo que haces cada día sostiene los resultados de cabina.</p>
     </div>
-    <div class="resultados">
-      <figure class="painel resultado revelar">
-        <img src="assets/resultados/cosmelan-antes-despues.webp?v=3" alt="Antes y después del método Cosmelan: manchas en la mejilla atenuadas" loading="lazy" width="1000" height="1094">
-        <figcaption data-i18n="res.c1">Método Cosmelan® · manchas y tono irregular</figcaption>
-      </figure>
-      <figure class="painel resultado revelar">
-        <img src="assets/resultados/facial-antes-despues.webp?v=3" alt="Antes y después de un tratamiento facial antiedad: líneas de expresión suavizadas" loading="lazy" width="1200" height="800">
-        <figcaption data-i18n="res.c2">Protocolo antiedad · líneas de expresión (antes / después)</figcaption>
-      </figure>
-    </div>
+    <ol class="passos revelar">
+      <li><strong data-i18n="rit.1t">Limpieza</strong><span data-i18n="rit.1">Mañana y noche.</span></li>
+      <li><strong data-i18n="rit.2t">Tratamiento</strong><span data-i18n="rit.2">El sérum que tu piel necesita.</span></li>
+      <li><strong data-i18n="rit.3t">Hidratación</strong><span data-i18n="rit.3">Respetando tu barrera cutánea.</span></li>
+      <li><strong data-i18n="rit.4t">Protección solar</strong><span data-i18n="rit.4">Todos los días del año.</span></li>
+    </ol>
   </section>
 
-  <!-- 11 RESERVAR -->
-  <section id="reservar" class="secao secao--contato">
-    <div class="painel painel--form revelar">
-      <span class="rotulo">10</span>
-      <h2 data-i18n="res2.h2">Reserva tu cita</h2>
-      <p data-i18n="res2.p">La forma más rápida es WhatsApp. Si prefieres, déjame tus datos y te respondo yo.</p>
-      <div class="botoes botoes--grade">
-        <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservar">Reservar tratamiento</a>
-        <a href="#" class="botao botao--linha" data-wa="domicilio" data-i18n="cta.domicilio">Reservar mi experiencia a domicilio</a>
+  <!-- RESERVAR -->
+  <section id="reservar" class="bloco bloco--contato">
+    <div class="contato">
+      <div class="contato-info revelar">
+        <span class="eyebrow" data-i18n="res2.eyebrow">Reservas</span>
+        <h2 data-i18n="res2.h2">Reserva tu cita</h2>
+        <p data-i18n="res2.p">La forma más rápida es WhatsApp. Si prefieres, déjame tus datos y te respondo yo.</p>
+        <dl class="dados">
+          <div><dt>WhatsApp</dt><dd><a href="#" data-wa="consultar">+34 642 14 82 82</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:yamilaa.burgos@gmail.com">yamilaa.burgos@gmail.com</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/yamilaburgos.skin/" target="_blank" rel="noopener">@yamilaburgos.skin</a></dd></div>
+          <div><dt data-i18n="res2.zona">Zona</dt><dd data-i18n="rod.local">Estudio en Fuengirola · A domicilio de Málaga a Estepona</dd></div>
+        </dl>
+        <a href="#" class="botao" data-wa="reservar" data-i18n="cta.reservarWa">Reservar por WhatsApp</a>
       </div>
-      <form class="form" novalidate>
+      <form class="form revelar" novalidate>
         <div class="campo">
           <label for="f-nome" data-i18n="f.nome">Nombre</label>
           <input id="f-nome" name="nombre" autocomplete="name" required>
@@ -281,12 +282,23 @@
 </main>
 
 <footer class="rodape">
-  <div class="painel rodape-painel">
-    <span class="marca-texto">Yamila Burgos <em>skin</em></span>
-    <span data-i18n="rod.local">Estudio en Fuengirola · A domicilio de Málaga a Estepona</span>
-    <a href="https://www.instagram.com/yamilaburgos.skin/" target="_blank" rel="noopener">Instagram</a>
-    <span>© <span data-ano></span> Yamila Burgos Skin</span>
+  <div class="rodape-grade">
+    <div>
+      <span class="marca-texto">Yamila Burgos <em>skin</em></span>
+      <p data-i18n="rod.lema">Estética avanzada no quirúrgica y bienestar.</p>
+    </div>
+    <nav aria-label="Pie">
+      <a href="#faciales" data-i18n="nav.faciales">Faciales</a>
+      <a href="#corporales" data-i18n="nav.corporales">Corporales</a>
+      <a href="#programas" data-i18n="nav.programas">Bonos</a>
+      <a href="#domicilio" data-i18n="nav.domicilio">A domicilio</a>
+    </nav>
+    <div class="rodape-redes">
+      <a href="https://www.instagram.com/yamilaburgos.skin/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" data-wa="consultar">WhatsApp</a>
+    </div>
   </div>
+  <p class="rodape-copy">© <span data-ano></span> Yamila Burgos Skin · Fuengirola, Málaga</p>
 </footer>
 
 <a class="whats" target="_blank" rel="noopener" data-wa="consultar" aria-label="WhatsApp">
@@ -295,7 +307,7 @@
 
 <script src="config.js"></script>
 <script src="datos.js"></script>
-<script src="i18n.js"></script>
-<script src="app.js"></script>
+<script src="i18n.js?v=4"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
