@@ -361,8 +361,9 @@ strong { font-weight: 500; }
 
 
 
-/* Logo en la portada, en el salmón de la marca */
 
 /* Fondo de monogramas YB en rosa suave (todas las secciones menos la portada) */
 .bloco { background-image: url("assets/marca/patron-yb.png?v=2"); background-size: 130px 130px; background-repeat: repeat; background-position: center top; }
 @media (max-width: 560px) { .bloco { background-size: 96px 96px; } }
+
+.sobre-lead { font: italic 400 clamp(22px, 1.8vw, 27px)/1.3 var(--serif); color: var(--tinta); margin: 18px 0 20px; }
