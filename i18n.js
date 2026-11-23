@@ -106,7 +106,7 @@ window.I18N_EN = {
   "js.sesiones": "sessions",
   "js.verificar": "Please check the highlighted fields.",
   "js.enviando": "Sending…",
-  "js.ok": "Thank you. I'll get back to you very soon.",
+  "js.ok": "WhatsApp is opening with your message ready: just tap send. Thank you!",
   "js.falha": "It couldn't be sent right now. Message me on WhatsApp.",
 };
 
@@ -117,6 +117,6 @@ window.I18N_ES_JS = {
   "js.sesiones": "sesiones",
   "js.verificar": "Revisa los campos marcados.",
   "js.enviando": "Enviando…",
-  "js.ok": "Gracias. Te respondo muy pronto.",
+  "js.ok": "Se abrió WhatsApp con tu mensaje listo: solo toca enviar. ¡Gracias!",
   "js.falha": "No se pudo enviar ahora. Escríbeme por WhatsApp.",
 };

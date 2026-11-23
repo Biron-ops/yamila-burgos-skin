@@ -182,10 +182,9 @@
   $$(".revelar").forEach((el) => io.observe(el));
   $$("[data-ano]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
-  /* ── Formulario → email ────────────────────────────────────────────────── */
+  /* ── Formulario → WhatsApp (+ copia por email) ────────────────────────────────────────────────── */
   if (form && S.contato) {
     const status = $(".form-status", form);
-    const botao = $("button[type=submit]", form);
     const avisar = (txt, tipo) => { status.textContent = txt; status.className = `form-status campo--inteiro ${tipo || ""}`; };
     form.addEventListener("submit", async (ev) => {
       ev.preventDefault();
@@ -200,6 +199,27 @@
       const dados = Object.fromEntries(new FormData(form));
       delete dados._honey;
       dados.idioma = lang;
+
+      /* 1) WhatsApp: abre el chat con Yamila con el mensaje ya armado */
+      const modoTxt = form.elements.modalidad.selectedOptions[0]?.textContent.trim() || dados.modalidad;
+      const en = lang === "en";
+      const lineas = [
+        en ? "Hi Yamila, I'm writing from your website." : "Hola Yamila, te escribo desde tu web.",
+        "",
+        `${en ? "Name" : "Nombre"}: ${dados.nombre}`,
+        `WhatsApp: ${dados.telefono}`,
+        `Email: ${dados.email}`,
+        `${en ? "Where" : "Dónde"}: ${modoTxt}`,
+      ];
+      if (dados.mensaje?.trim()) lineas.push(`${en ? "Treatment" : "Tratamiento"}: ${dados.mensaje.trim()}`);
+      const num = String(S.whatsapp?.numero || "").replace(/\D/g, "");
+      const wa = `https://wa.me/${num}?text=${encodeURIComponent(lineas.join("\n"))}`;
+      const ventana = window.open(wa, "_blank");
+      if (!ventana) location.href = wa;
+      form.reset();
+      avisar(t("js.ok"), "ok");
+
+      /* 2) Copia por email en segundo plano (no bloquea) */
       const assunto = S.contato.assunto || `Nueva consulta · ${S.nome || ""}`;
       let url, corpo;
       if (S.contato.web3formsChave) {
@@ -209,20 +229,8 @@
         url = `https://formsubmit.co/ajax/${encodeURIComponent(S.contato.email)}`;
         corpo = { _subject: assunto, _template: "table", _captcha: "false", ...dados };
       }
-      botao.disabled = true;
-      avisar(t("js.enviando"));
-      try {
-        const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(corpo) });
-        const j = await r.json().catch(() => ({}));
-        if (!r.ok || j.success === false || j.success === "false") throw new Error(j.message || r.status);
-        form.reset();
-        avisar(t("js.ok"), "ok");
-      } catch (e) {
-        console.warn("Error al enviar el formulario:", e);
-        avisar(t("js.falha"), "falha");
-      } finally {
-        botao.disabled = false;
-      }
+      fetch(url, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(corpo) })
+        .catch((e) => console.warn("Copia por email no enviada:", e));
     });
   }
 })();
