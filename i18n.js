@@ -50,11 +50,11 @@ window.I18N_EN = {
   "rit.marcas": "Mesoestetic and Naturnua professional skincare.",
 
   "sobre.cargo": "Beauty therapist · Cosmetologist · Dermocosmiatrist",
-  "sobre.lead": "Specialist in skincare and advanced aesthetics",
-  "sobre.p1": "I'm Argentinian and I have been dedicated to aesthetics and skincare for more than 10 years.",
-  "sobre.p2": "I began my training in Argentina, where I studied professional aesthetics, cosmetology and dermocosmiatry. I continued specialising in Spain, broadening my knowledge and gaining experience in several advanced aesthetic clinics.",
-  "sobre.p3": "From this journey, Yamila Burgos Skin was born: a project that reflects my experience, dedication and passion for understanding the needs of every skin.",
-  "sobre.p4": "I love advising, sharing my knowledge and teaching the importance of daily care, offering close, personalised attention.",
+  "sobre.lead": "Specialist in skincare and advanced aesthetics.",
+  "sobre.p1": "I'm Argentinian and I have been dedicated to the world of aesthetics for more than 10 years, a profession that combines my passion for beauty, wellbeing and self-care.",
+  "sobre.p2": "I began my training in Argentina, specialising in professional aesthetics, cosmetology and dermocosmiatry. I continued refining my knowledge in Spain, gaining experience in advanced aesthetic clinics.",
+  "sobre.p3": "From this journey, Yamila Burgos Skin was born: a space dedicated to skincare, where every treatment is tailored to each person's needs.",
+  "sobre.p4": "I believe in a beauty that goes beyond aesthetics: a beauty that conveys security, confidence and wellbeing.",
   "sobre.p5": "My philosophy is simple: know your skin, care for it and enhance its natural beauty.",
 
   "res.h2": "Real results",
